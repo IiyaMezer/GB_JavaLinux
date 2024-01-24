@@ -21,7 +21,7 @@ public class Main {
             FileWriter writer = new FileWriter("prizes.txt");
             for (int i = 0; i < 10; i++) {
                 Toy toy = prises.Get();
-                writer.write(toy.getId() + " " + toy.getName() + " " + toy.getRareness() + "\n");
+                writer.write(toy.getId() + " " + toy.getName() + " " + toy.getFrequency() + "\n");
             }
             writer.close();
         } catch (IOException e) {

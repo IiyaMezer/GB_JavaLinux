@@ -2,12 +2,12 @@ public class Toy {
     private int id;
     private static int currentId = 1;
     private String name;
-    private int rareness;
+    private int frequency;
 
     public Toy(String name, int rareness) {
         this.id = currentId++;
         this.name = name;
-        this.rareness = 100-rareness; //Больше редкость - ниже в очереди
+        this.frequency = 100-rareness; //Больше редкость - ниже в очереди
     }
 
     public int getId() {
@@ -18,15 +18,15 @@ public class Toy {
         return name;
     }
 
-    public int getRareness() {
-        return rareness;
+    public int getFrequency() {
+        return frequency;
     }
     @Override
     public String toString(){
         return "Toy{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", rareness=" + rareness +
+                ", rareness=" + frequency +
                 '}';
     }
 }
