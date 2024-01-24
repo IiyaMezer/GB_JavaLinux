@@ -6,7 +6,7 @@ public class Prises {
     public PriorityQueue<Toy> queue;
 
     public Prises() {
-        queue = new PriorityQueue<>(Comparator.comparingInt(Toy::getRareness));
+        queue = new PriorityQueue<>(Comparator.comparingInt(Toy::getFrequency));
     }
 
     public void Put(Toy toy){
