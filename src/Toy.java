@@ -1,12 +1,12 @@
 public class Toy {
-    private int id;
+    private static int id;
     private String name;
     private int rareness;
 
-    public Toy(int id, String name, int luck) {
-        this.id = id;
+    public Toy(String name, int rareness) {
+        this.id++;
         this.name = name;
-        this.rareness = luck;
+        this.rareness = 100-rareness; //Больше редкость - ниже в очереди
     }
 
     public int getId() {
